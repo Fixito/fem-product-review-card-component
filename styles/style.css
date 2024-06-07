@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* Colors */
+
+  /* Primary */
+  --clr-primary-5: #3d8168;
+  --clr-primary-6: #1a4032;
+  --clr-primary-7: #1c232b;
+
+  /* Neutral */
+  --clr-neutral-1: #6c7289;
+
+  /* Rest of colors */
+  --clr-white: #fff;
+  --clr-cream: #f2eae2;
+
+  /* Typography */
+  --ff-body: 'Montserrat', sans-serif;
+  --ff-heading: 'Fraunces', serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-4xl: 2rem;
+
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* Rest of vers */
+  --letter-spacing: 5px;
+  --card-size: 37.5rem;
+  --rounded-lg: 0.5rem;
+  --rounded-xl: 0.625rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.5;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  background-color: var(--clr-cream);
+  color: var(--clr-neutral-1);
+  min-height: 100vh;
+  padding-inline: 1rem;
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  margin: 0;
+  line-height: 1;
+}
+
+.img {
+  display: block;
+  max-inline-size: 100%;
+  object-fit: cover;
+}
+
+.card {
+  background-color: var(--clr-white);
+  max-width: var(--card-size);
+  border-radius: var(--rounded-xl);
+  overflow: hidden;
+}
+
+.card__content {
+  padding: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    display: flex;
+  }
+
+  .card__img {
+    height: 100%;
+    width: 300px;
+    flex: 1;
+  }
+
+  .card__content {
+    padding: 2rem;
+    flex: 1;
+  }
+}
+
+.card__category {
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing);
+}
+
+.card__title {
+  font-family: var(--ff-heading);
+  color: var(--clr-primary-7);
+  font-size: var(--fs-4xl);
+  font-weight: var(--fw-bold);
+  margin-block-start: 0.75rem;
+}
+
+.card__description {
+  margin-block-start: 1rem;
+}
+
+.card__pricing {
+  margin-block-start: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.1875rem;
+}
+
+.card__current-price {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-4xl);
+  font-weight: var(--fw-bold);
+  color: var(--clr-primary-5);
+}
+
+.card__original-price {
+  font-size: var(--fs-xs);
+  text-decoration: line-through;
+}
+
+.card__btn {
+  cursor: pointer;
+  margin-block-start: 1.25rem;
+  width: 100%;
+  border: none;
+  background-color: var(--clr-primary-5);
+  border-radius: var(--rounded-lg);
+  padding-block: 1rem;
+  color: var(--clr-white);
+  font-weight: var(--fw-bold);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.card__btn:hover {
+  opacity: 0.85;
+}
