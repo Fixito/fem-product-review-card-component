@@ -79,23 +79,6 @@ h1 {
   padding: 1.5rem;
 }
 
-@media screen and (min-width: 768px) {
-  .card {
-    display: flex;
-  }
-
-  .card__img {
-    height: 100%;
-    width: 300px;
-    flex: 1;
-  }
-
-  .card__content {
-    padding: 2rem;
-    flex: 1;
-  }
-}
-
 .card__category {
   font-size: var(--fs-xs);
   text-transform: uppercase;
@@ -151,5 +134,30 @@ h1 {
 }
 
 .card__btn:hover {
-  opacity: 0.85;
+  background-color: var(--clr-primary-6);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    display: flex;
+  }
+
+  .card__img {
+    width: 18.75rem;
+    height: 100%;
+    flex: 1;
+  }
+
+  .card__content {
+    padding: 2rem;
+    flex: 1;
+  }
+
+  .card__title {
+    margin-block-start: 1.25rem;
+  }
+
+  .card__description {
+    margin-block-start: 1.5rem;
+  }
 }
