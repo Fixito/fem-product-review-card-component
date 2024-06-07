@@ -14,7 +14,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Live Site URL: [Demo]()
+- Live Site URL: [Demo](https://product-review-card-component-fem.netlify.app/)
 
 ## My process
 
