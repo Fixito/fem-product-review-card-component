@@ -41,10 +41,6 @@
   box-sizing: border-box;
 }
 
-html {
-  line-height: 1.5;
-}
-
 body {
   font-family: var(--ff-body);
   font-size: var(--fs-sm);
@@ -95,6 +91,7 @@ h3 {
 
 .card__description {
   margin-block-start: 1rem;
+  line-height: 1.64;
 }
 
 .card__pricing {
@@ -115,6 +112,7 @@ h3 {
 .card__original-price {
   font-size: var(--fs-xs);
   text-decoration: line-through;
+  line-height: 1.77;
 }
 
 .card__btn {
