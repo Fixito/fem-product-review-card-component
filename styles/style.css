@@ -53,7 +53,7 @@ body {
   place-content: center;
 }
 
-h3 {
+.card__title {
   margin: 0;
   line-height: 1;
 }
