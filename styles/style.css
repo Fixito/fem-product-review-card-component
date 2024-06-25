@@ -110,7 +110,6 @@ body {
 }
 
 .card__original-price {
-  font-size: var(--fs-xs);
   text-decoration: line-through;
   line-height: 1.77;
 }
