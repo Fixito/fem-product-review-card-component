@@ -57,7 +57,7 @@ body {
   place-content: center;
 }
 
-h1 {
+h3 {
   margin: 0;
   line-height: 1;
 }
@@ -109,6 +109,7 @@ h1 {
   font-size: var(--fs-4xl);
   font-weight: var(--fw-bold);
   color: var(--clr-primary-5);
+  line-height: 1;
 }
 
 .card__original-price {
@@ -145,7 +146,6 @@ h1 {
   .card__img {
     width: 18.75rem;
     height: 100%;
-    flex: 1;
   }
 
   .card__content {
@@ -159,5 +159,13 @@ h1 {
 
   .card__description {
     margin-block-start: 1.5rem;
+  }
+
+  .card__pricing {
+    margin-block-start: 1.8125rem;
+  }
+
+  .card__btn {
+    margin-block-start: 1.875rem;
   }
 }
