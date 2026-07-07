@@ -113,7 +113,6 @@
   }
 
   p {
-    /* text-box: trim-both cap alphabetic; */
     text-wrap: pretty;
   }
 
