@@ -113,6 +113,7 @@
   }
 
   p {
+    /* text-box: trim-both cap alphabetic; */
     text-wrap: pretty;
   }
 
@@ -164,6 +165,12 @@
     }
   }
 
+  .card__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-300);
+  }
+
   .card__category {
     color: var(--muted-foreground);
     font: var(--text-category);
@@ -173,13 +180,11 @@
 
   .card__title {
     font: var(--text-heading);
-    margin-block-start: var(--space-300);
   }
 
   .card__description {
     color: var(--muted-foreground);
     font: var(--text-body);
-    margin-block-start: var(--space-300);
   }
 
   .card__pricing {
@@ -201,6 +206,7 @@
 
   .card__btn {
     background-color: var(--primary);
+    block-size: 3.125rem;
     border-radius: var(--rounded-lg);
     color: var(--primary-foreground);
     cursor: pointer;
